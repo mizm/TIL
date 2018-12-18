@@ -6,5 +6,4 @@ import os
 os.chdir(r'C:\Users\student\work\day02\dummy')
 #print(os.getcwd())
 for filename in os.listdir('.'):
-    
     os.rename(filename,filename.replace("지원서","합격자"))
