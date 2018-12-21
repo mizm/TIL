@@ -6,6 +6,3 @@ soup = bs4.BeautifulSoup(response, 'html.parser')
 result = soup.select_one('#KOSPI_now').text
 print(result)
 
-for item in result :
-    print(item.text)
-

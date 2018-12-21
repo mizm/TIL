@@ -7,5 +7,5 @@ headers = {
 
 response = requests.get('https://www.melon.com/chart/index.htm',headers = headers).text
 print(response)
-#soup = bs4.BeautifulSoup(response, 'html.parser')
-#result = soup.select('')
+#oup = bs4.BeautifulSoup(response, 'html.parser')
+result = soup.select('')
