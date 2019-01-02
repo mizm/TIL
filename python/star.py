@@ -1,13 +1,3 @@
-def star(cnt):
-    for i in range(0,cnt-1) :
-        print(' ',end = '')
-
-    print('*')
-    for i in range(0,cnt-2) :
-        print(' ',end = '')
-    print('* *')
-    for i in range(0,cnt-3) :
-        print(' ',end = '')
-    print('*****')
-
-star(24)
+student = {'python': 80, 'algorithm': 99, 'django': 89, 'flask': 83}
+avg = sum(student.values())/len(student)
+print(avg)
