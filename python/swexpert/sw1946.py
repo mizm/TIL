@@ -11,6 +11,3 @@ for a in range(int(input())) :
             print()
         print(t[j],end='')
     print()
-        
-
-        

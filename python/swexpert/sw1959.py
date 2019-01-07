@@ -6,11 +6,11 @@ for i in range(int(input())) :
     if a > b:
         a,b = b,a
         l,k = k,l
-    o=0
+    top = 0
     for j in range(b-a+1) :
-        p = 0
+        temp = 0
         for t in range(a) :
-            p+=l[t]*k[t+j]
-        if o<p:
-            o = p
+            temp += l[t]*k[t+j]
+        if top < temp:
+            top = temp
     print(f'#{i+1} {o}')                
