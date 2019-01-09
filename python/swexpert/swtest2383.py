@@ -85,10 +85,10 @@ for a in range(int(input())):
                 floor.append((x,y))
     #==               
     t = 2**len(person)
-    m = k = 100
+    m = k = -1
     for i in range(t) :
         k = timec(bin(i)[2:].zfill(len(person)),person,floor,floorList)
         #print(bin(i)[2:].zfill(len(person)),k)
         if m >= k:
             m = k
-    print(f'#{i} m')
+    print(f'#{a+1} {m{')

@@ -1,4 +1,4 @@
-for i in range(int(input())):
+D
     v = d = 0
     for j in range(int(input())):
         p = input()
