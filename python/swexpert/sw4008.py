@@ -1,8 +1,14 @@
 def dfs(d,my_max,my_min,numbers,op) :
-    if not numbers :
+    if d >= len(numbers)-1 :
+        return 
         
     for idx,i in enumerate(op) :
         if i > 0 :
+            op[idx] -= 1
+            d+=1
+            if i == '+' :
+                dfs(d,my_max,my_min,number)
+
             
 
 for a in range(int(input())) : #총 테스트 케이스의 개수 T
