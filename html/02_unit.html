@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* coloe */
+        /* 1. color name */
+        h1 {
+            color:red;
+        }
+        /* 2. color code */
+        h2 {
+            color : #0000ff;
+        }
+        /* rgb */
+        h3 {
+            color :rgb(0,255,0);
+        }
+        /* rgba */
+        p {
+            color : rgba(255,0,0,0.3);
+        }
+        /* font-size */
+        html {
+            font-size : 10px;
+        }
+        ol {
+            /* rem : html의 font-size에 비례*/
+            font-size : 1.2rem;
+            /* 10px * 1.2  */
+        }
+        ul {
+            /* em : 자신의 상위 요소의 font-size에 비례 */
+            font-size : 1.2em;
+        }
+        .em {
+            font-size : 1.2em;
+        }
+        /* 10px(html) * 1.2(ul) * 1.2(li) = 14.4px */
+        .vh {
+            font-size : 5vh;
+        }
+        .vw{
+            font-size : 5vw;
+        }
+        /* vh view height사용자가 보는 세로길이에 맞게 
+        vw view width 사용자가 보는 가로길이에 맞게 */
+    </style>
+</head>
+<body>
+    <div>
+        저는 10px입니다.
+    </div>
+    <ol>
+        <li>저는 1.2rem</li>
+    </ol>   
+    <ul>   
+        <li class = "em">저는1.2em</li>
+    </ul> 
+    <span class = 'vh'>5vh</span>
+    <span class = 'vw'>5vw</span>
+    <h1>빨간색</h1>
+    <h2>파란색 컬러코드</h2>
+    <h3>초록색 rgb코드</h3>
+    <p>흐릿한 빨간색(투명도)</p>
+</body>
+</html>
