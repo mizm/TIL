@@ -1,0 +1,34 @@
+.box-static{
+    background: gray;
+    border : 2px solid red;
+    width : 100px;
+    height : 100px;
+}
+/* 2. absolute */
+.box-absolute {
+    position : absolute;
+    background : green;
+    width : 100px;
+    height: 100px;
+    top : 50px;
+    left : 50px;
+    z-index:  10;
+
+}
+/* 3. relative */
+.box-relative {
+    position: relative;
+    background: blue;
+    width : 100px;
+    height: 100px;
+}
+/* fixed */
+.box-fixed {
+    position: fixed;
+    background: pink;
+    width : 100px;
+    height: 100px;
+    top : 50px;
+    right : 50px;
+    
+}
