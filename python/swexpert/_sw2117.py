@@ -11,9 +11,6 @@ def dfs(x,y,k) :
             result = dfsresult
     if k <= n :
         dfs(x,y,k+1)
-    
-
-    
 for a in range(int(input())) :
     n,m = list(map(int,input().split()))
     item = [list(map(int,input().split())) for i in range(n)]
@@ -27,4 +24,3 @@ for a in range(int(input())) :
         for j in range(n) :
             dfs(i,j,1)
     print(f'#{a+1} {result}')
-
