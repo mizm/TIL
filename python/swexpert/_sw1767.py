@@ -5,14 +5,19 @@ def dfs(x,y,pos,my_list) :
     #print(temp_list,x,y)
 
     draw(x,y,pos,2)
-    # print(x,y,pos)
-    # for i in item :
-    #     print(i)
     for i in temp_list:
         x1,y1 = i
         for j in range(4) :
             if chk(x1,y1,j) :
                 dfs(x1,y1,j,temp_list)
+    # if core == 5 and my == 16:
+    #     for t in item :
+    #         print(t)
+    #     print('cc')
+    if core >= core_max :
+        core_max = core
+        if my_min > my :
+            my_min = my       
     draw(x,y,pos,0)
     return
 
@@ -23,13 +28,14 @@ def draw(x,y,pos,ch) :
         core += 1
     if ch == 0 :
         core -= 1
-    for i in range(1,n) :
-        if y-i >= 0 :
-            if ch == 2 :
-                my += 1
-            if ch == 0 :
-                my -= 1
-            item[y-i][x] = ch
+    if pos == 0 :
+        for i in range(1,n) :
+            if y-i >= 0 :
+                if ch == 2 :
+                    my += 1
+                if ch == 0 :
+                    my -= 1
+                item[y-i][x] = ch
     if pos == 1 :
         for i in range(1,n) :
             if x+i <n :    
@@ -91,10 +97,8 @@ for a in range(int(input())) :
         for j in range(4) :
             if chk(x,y,j) :
                 dfs(x,y,j,my_list)
-                if core >= core_max :
-                    core_max = core
-                if my < my_min :
-                    my_min = my
+                #print(my)
+                
     # my = 0
     # my_min = 1000000
     # for i in my_list :
@@ -104,6 +108,13 @@ for a in range(int(input())) :
     #             my = 0
     #             dfs(x,y,j,my_list)
     # for j in range(4) :
-    #     print(2,1,j)
-    #     print(chk(2,1,j))
+    #     print(1,4,j)
+    #     if chk(2,1,j) :
+    #         for t in item :
+    #             print(t)
+    #         print(chk(2,1,j))
+    #         draw(2,1,j,2)
+    #         for t in item :
+    #             print(t)
+    #         draw(2,1,j,0)
     print(my_min,core_max)
