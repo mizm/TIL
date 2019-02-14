@@ -16,6 +16,7 @@ def mysqrt(n) :
             b = c
         else :
             a = c
+            
 def mysqrt(n,a,b) :
     if n == 1 :
         return 1
