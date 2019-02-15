@@ -15,3 +15,4 @@ for i in range(1,11):
                     m = temp
             my_sum+=m
     print(f'#{i} {my_sum}')
+    # print("%d %d" %(i,my_sum))
