@@ -3,7 +3,6 @@ for tc in range(int(input())):
     charge=list(map(int,input().split()))
     result = 0
     now = 0
-    many = len(charge)
     check = True
     while check :
         check = False
