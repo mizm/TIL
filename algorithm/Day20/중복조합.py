@@ -55,8 +55,8 @@ def dfs(pos) :
     dfs(pos)
     Data.pop()
     dfs(pos+1)
-c = 5
-r = 3
+c = 3
+r = 2
 Data = []
 dfs(1)
 
