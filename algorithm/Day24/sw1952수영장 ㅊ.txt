@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+int money[4] = { 0, }, use[12] = { 0, }, res;
+
+int min(int a, int b)
+{
+	if (b > a) return a;
+	else return b;
+}
+void solve(int pos,int temp)
+{
+	if (temp > res)
+		return;
+	if (pos >= 12)
+	{
+		if (res > temp)
+			res = temp;
+		return;
+	}
+	solve(pos + 1, temp + min(use[pos] * money[0], money[1]));
+	solve(pos + 3, temp + money[2]);
+	solve(pos + 12, temp + money[3]);
+}
+int main()
+{
+	int test_case;
+	int T;
+	scanf_s("%d", &T);
+
+	for (test_case = 1; test_case <= T; ++test_case)
+	{
+		res = 987654321;
+		for (int i = 0; i < 4; i++)
+			scanf_s("%d", &money[i]);
+		for (int i = 0; i < 12; i++)
+			scanf_s("%d", &use[i]);
+		solve(0, 0); 
+		printf("#%d %d\n", test_case,res);
+	}
+	return 0;
+}

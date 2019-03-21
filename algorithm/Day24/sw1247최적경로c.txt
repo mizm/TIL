@@ -1,0 +1,86 @@
+//sw1247 최적경로
+#include "pch.h"
+#include <iostream>
+
+using namespace std;
+int n;
+int min_value;
+int item[24] = { 0, };
+int path[10];
+int visited[10];
+int abs(int a, int b)
+{
+	if(a-b > 0) return a - b;
+	else return b - a;
+}
+void dfs(int pos)
+{
+	if (pos >= n)
+	{
+		int dis = 0;
+		int x = item[2];
+		int y = item[3];
+		int ex = item[0];
+		int ey = item[1];
+		int x1 = 0, y1 = 0;
+		
+		for (int i = 0; i < n; i++)
+		{
+			x1 = item[(path[i] * 2) + 4];
+			y1 = item[(path[i] * 2+1) + 4];
+			dis += abs(x1, x) + abs(y1, y);
+			x = x1;
+			y = y1;
+		}
+		dis += abs(x1, ex) + abs(y1,ey);
+		if (dis < min_value) min_value = dis;
+		return;
+	}
+	for (int i = 0; i < n; i++)
+	{
+		if (!visited[i])
+		{
+			visited[i] = 1;
+			path[pos] = i;
+			dfs(pos + 1);
+			visited[i] = 0;
+		}
+	}
+}
+
+int main()
+{
+	int test_case;
+	int T;
+	
+	cin >> T;
+	for (test_case = 1; test_case <= T; ++test_case)
+	{
+		n = 0;
+		min_value = 987654321;
+		scanf_s("%d", &n);
+		for (int i = 0; i < 10; i++)
+		{
+			path[i] = 0;
+			visited[i] = 0;
+		}
+		for (int i = 0; i < 24; i++)
+			item[i] = -1;
+		for(int i = 0; i < (n+2)*2;i++)
+			scanf_s("%d", &item[i]);
+		dfs(0);
+		printf("#%d %d\n",test_case, min_value);
+	}
+	return 0;
+}
+
+// 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
+// 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
+
+// 시작을 위한 팁: 
+//   1. [솔루션 탐색기] 창을 사용하여 파일을 추가/관리합니다.
+//   2. [팀 탐색기] 창을 사용하여 소스 제어에 연결합니다.
+//   3. [출력] 창을 사용하여 빌드 출력 및 기타 메시지를 확인합니다.
+//   4. [오류 목록] 창을 사용하여 오류를 봅니다.
+//   5. [프로젝트] > [새 항목 추가]로 이동하여 새 코드 파일을 만들거나, [프로젝트] > [기존 항목 추가]로 이동하여 기존 코드 파일을 프로젝트에 추가합니다.
+//   6. 나중에 이 프로젝트를 다시 열려면 [파일] > [열기] > [프로젝트]로 이동하고 .sln 파일을 선택합니다.
