@@ -6,7 +6,7 @@ def partion(f,t) :
     i = f
     j = t
     while i < j:
-        while data[i] < pivot:
+        while i < j and data[i] <= pivot:
             i += 1
         while data[j] > pivot:
             j -= 1
