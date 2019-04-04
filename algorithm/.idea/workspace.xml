@@ -7,9 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8db4c496-66b1-4ca0-8268-d1fb83758e58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day32/sw1494카운슬러.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day32/sw1494카운슬러.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day32/sw3814평등주의.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day33/sw3814평등주의.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,36 +25,36 @@
     <session id="-327312223">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="173" />
+          <entry key="py" value="186" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="173" />
+          <entry key="Python" value="186" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="1" />
+          <entry key="Python Console" value="39" />
           <entry key="dummy" value="44" />
-          <entry key="py" value="48881" />
+          <entry key="py" value="55647" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="44" />
-          <entry key="Python" value="48882" />
+          <entry key="Python" value="55686" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.3" value="8" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.open.time.3" value="9" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -63,74 +62,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day31/sw3234준환.py">
+        <entry file="file://$PROJECT_DIR$/Day33/sw1808계산기.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="925">
+              <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
               <folding>
-                <marker date="1554253214990" expanded="true" signature="1001:1002" ph="..." />
+                <marker date="1554346966633" expanded="true" signature="24:611" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day32/sw1244상금.py">
+        <entry file="file://$PROJECT_DIR$/Day33/sw3752시험점수.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-              <folding>
-                <marker date="1554265072605" expanded="true" signature="1269:1490" ph="..." />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day32/sw3814평등주의.py">
+        <entry file="file://$PROJECT_DIR$/Day33/sw4335무인도탈출.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="900">
+              <caret line="36" column="21" lean-forward="true" selection-end-line="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day32/sw1494카운슬러.py">
+        <entry file="file://C:/Program Files/Python35/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day32/sw1861정사각형.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day31/sw2819격자판.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding>
-                <marker date="1554163906575" expanded="true" signature="49:99" ph="..." />
-                <marker date="1554163906575" expanded="true" signature="122:375" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day31/sw3347올림픽.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+            <state relative-caret-position="-1105">
+              <caret line="308" selection-start-line="308" selection-end-line="308" />
             </state>
           </provider>
         </entry>
@@ -150,13 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Day23/중복순열.py" />
-        <option value="$PROJECT_DIR$/Day23/sw1865동철.py" />
-        <option value="$PROJECT_DIR$/Day24/sw1247최적경로.py" />
-        <option value="$PROJECT_DIR$/Day24/sw5189 전자카트.py" />
-        <option value="$PROJECT_DIR$/Day24/sw5201컨테이너.py" />
-        <option value="$PROJECT_DIR$/Day24/sw5202화물도크.py" />
-        <option value="$PROJECT_DIR$/Day24/babygin.py" />
         <option value="$PROJECT_DIR$/Day24/sw5203babygin.py" />
         <option value="$PROJECT_DIR$/Day25/보급로.py" />
         <option value="$PROJECT_DIR$/Day25/bj2568전깃줄.py" />
@@ -197,15 +155,22 @@
         <option value="$PROJECT_DIR$/Day31/sw3813수명.py" />
         <option value="$PROJECT_DIR$/Day31/sw3347올림픽.py" />
         <option value="$PROJECT_DIR$/Day31/sw3234준환.py" />
-        <option value="$PROJECT_DIR$/Day32/sw1494카운슬러.py" />
         <option value="$PROJECT_DIR$/Day32/sw1861정사각형.py" />
         <option value="$PROJECT_DIR$/Day32/sw1244상금.py" />
         <option value="$PROJECT_DIR$/Day32/sw3814평등주의.py" />
+        <option value="$PROJECT_DIR$/Day33/sw3814평등주의.py" />
+        <option value="$PROJECT_DIR$/Day32/sw1494카운슬러.py" />
+        <option value="$PROJECT_DIR$/Day33/sw6109추억2048.py" />
+        <option value="$PROJECT_DIR$/Day33/sw4008숫자.py" />
+        <option value="$PROJECT_DIR$/Day33/sw1248공통조상.py" />
+        <option value="$PROJECT_DIR$/Day33/sw1808계산기.py" />
+        <option value="$PROJECT_DIR$/Day33/sw3752시험점수.py" />
+        <option value="$PROJECT_DIR$/Day33/sw4335무인도탈출.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -228,12 +193,7 @@
             <path>
               <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="Day31" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="Day32" type="462c0819:PsiDirectoryNode" />
+              <item name="Day33" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,6 +208,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\student\miz\algorithm\Day33" />
       <recent name="C:\Users\student\miz\algorithm\Day31" />
       <recent name="C:\Users\student\miz\algorithm\Day22" />
       <recent name="C:\Users\student\miz\algorithm\Day20" />
@@ -266,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sw3814평등주의">
+  <component name="RunManager" selected="Python.sw4335무인도탈출">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -311,7 +272,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sw1244상금" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sw1248공통조상" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -319,12 +280,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Program Files\Python35\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day32" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day33" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day32/sw1244상금.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day33/sw1248공통조상.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -355,7 +316,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sw1861정사각형" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sw1808계산기" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -363,12 +324,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Program Files\Python35\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day32" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day33" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day32/sw1861정사각형.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day33/sw1808계산기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -377,7 +338,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sw3813수명" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sw3752시험점수" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -385,12 +346,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Program Files\Python35\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day31" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day33" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day31/sw3813수명.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day33/sw3752시험점수.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -399,7 +360,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sw3814평등주의" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sw4335무인도탈출" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -407,12 +368,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Program Files\Python35\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day32" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day33" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day32/sw3814평등주의.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day33/sw4335무인도탈출.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -423,19 +384,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.bj15486" />
-      <item itemvalue="Python.sw3813수명" />
       <item itemvalue="Python.sw1494카운슬러" />
-      <item itemvalue="Python.sw1861정사각형" />
-      <item itemvalue="Python.sw1244상금" />
-      <item itemvalue="Python.sw3814평등주의" />
+      <item itemvalue="Python.sw1248공통조상" />
+      <item itemvalue="Python.sw1808계산기" />
+      <item itemvalue="Python.sw3752시험점수" />
+      <item itemvalue="Python.sw4335무인도탈출" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sw3814평등주의" />
-        <item itemvalue="Python.sw1244상금" />
-        <item itemvalue="Python.sw1861정사각형" />
+        <item itemvalue="Python.sw4335무인도탈출" />
+        <item itemvalue="Python.sw3752시험점수" />
+        <item itemvalue="Python.sw1808계산기" />
+        <item itemvalue="Python.sw1248공통조상" />
         <item itemvalue="Python.sw1494카운슬러" />
-        <item itemvalue="Python.sw3813수명" />
       </list>
     </recent_temporary>
   </component>
@@ -470,7 +431,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18055555" />
@@ -478,8 +439,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26973686" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39473686" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27192983" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3897937" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
@@ -686,9 +647,24 @@
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Day32/sw3814평등주의.py</url>
+          <url>file://$PROJECT_DIR$/Day33/sw3814평등주의.py</url>
           <line>10</line>
           <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Day33/sw1808계산기.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Day33/sw1808계산기.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Day33/sw4335무인도탈출.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -701,48 +677,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day02/sw4831.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day26/quick sort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="13" selection-end-column="47" />
-          <folding>
-            <marker date="1553565078121" expanded="true" signature="116:415" ph="..." />
-            <marker date="1553565078121" expanded="true" signature="435:450" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day27/전기버스2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="24" lean-forward="true" selection-end-line="29" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day27/퀵정렬.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day26/bj2263.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day27/bj3079.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day27/병합정렬.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-288">
@@ -936,13 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python35/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day30/sw1953탈주범.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-54">
@@ -974,24 +901,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day32/sw1494카운슬러.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day32/sw1861정사각형.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day31/sw2819격자판.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="275">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
             <marker date="1554163906575" expanded="true" signature="49:99" ph="..." />
             <marker date="1554163906575" expanded="true" signature="122:375" ph="..." />
@@ -1001,18 +914,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day32/sw1244상금.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day32/sw1861정사각형.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day32/sw1494카운슬러.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day33/sw4008숫자.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day33/sw6109추억2048.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="96" column="8" selection-end-line="96" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day33/sw3814평등주의.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day33/sw1248공통조상.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day33/sw1808계산기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
           <folding>
-            <marker date="1554265072605" expanded="true" signature="1269:1490" ph="..." />
+            <marker date="1554346966633" expanded="true" signature="24:611" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day32/sw3814평등주의.py">
+    <entry file="file://$PROJECT_DIR$/Day33/sw3752시험점수.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="150">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python35/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1105">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day33/sw4335무인도탈출.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="36" column="21" lean-forward="true" selection-end-line="38" />
         </state>
       </provider>
     </entry>

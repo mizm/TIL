@@ -16,11 +16,19 @@ for tc in range(int(input())):
             if item[i] > item[i+1] + m :
                 p += item[i] - (item[i+1] + m)
                 item[i] -= item[i] - (item[i+1] + m)
+                if item[i] < 1 :
+                    k = 1-item[i]
+                    p -= k
+                    item[i] + k
                 continue
             if item[i+1] > item[i] + m :
                 p += item[i+1] - (item[i] + m)
                 item[i+1] -= item[i+1] - (item[i] + m)
-        print(m,p,item)
+                if item[i+1] < 1 :
+                    k = 1-item[i+1]
+                    p -= k
+                    item[i+1] + k
+        # print(m,p,item)
         if p <= t :
             if max_v > m :
                 max_v = m

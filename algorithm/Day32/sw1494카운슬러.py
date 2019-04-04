@@ -1,7 +1,7 @@
 def dfs(pos,num) :
     global m
     if num == n//2 :
-        print(visited)
+        # print(visited)
         sx=0
         sy=0
         for i in range(n) :
