@@ -12,22 +12,32 @@ for tc in range(int(input())):
         m = kk
         p = 0
         item = titem[:]
-        for i in range(n-1) :
-            if item[i] > item[i+1] + m :
-                p += item[i] - (item[i+1] + m)
-                item[i] -= item[i] - (item[i+1] + m)
-                if item[i] < 1 :
-                    k = 1-item[i]
-                    p -= k
-                    item[i] + k
-                continue
-            if item[i+1] > item[i] + m :
-                p += item[i+1] - (item[i] + m)
-                item[i+1] -= item[i+1] - (item[i] + m)
-                if item[i+1] < 1 :
-                    k = 1-item[i+1]
-                    p -= k
-                    item[i+1] + k
+        chkc = True
+        while chkc :
+            for i in range(n-1) :
+                if item[i] > item[i+1] + m :
+                    p += item[i] - (item[i+1] + m)
+                    item[i] -= item[i] - (item[i+1] + m)
+                    if item[i] < 1 :
+                        k = 1-item[i]
+                        p -= k
+                        item[i] + k
+                    continue
+                if item[i+1] > item[i] + m :
+                    p += item[i+1] - (item[i] + m)
+                    item[i+1] -= item[i+1] - (item[i] + m)
+                    if item[i+1] < 1 :
+                        k = 1-item[i+1]
+                        p -= k
+                        item[i+1] + k
+            if p > t : break
+            for i in range(n-1) :
+                if abs(item[i]-item[i+1]) > m :
+                    chkc = False;
+            if chkc == False :
+                chkc = True
+            else :
+                chkc = False
         # print(m,p,item)
         if p <= t :
             if max_v > m :

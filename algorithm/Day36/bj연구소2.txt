@@ -1,0 +1,164 @@
+// ConsoleApplication1.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
+//
+
+#include "pch.h"
+#include <iostream>
+
+int n, m, map[50][50];
+int res = 987654321;
+int dx[4] = { 0,0,1,-1 };
+int dy[4] = { -1,1,0,0 };
+
+int viruslist[10][2];
+int vi[10];
+int k = 0;
+bool issafe(int x, int y, int tmpmap[50][50])
+{
+	return x >= 0 && x < n && y >= 0 && y < n && tmpmap[y][x] != 1;
+}
+void bfs()
+{
+	int Q[2600][2];
+	int tmpmap[50][50];
+	int k = -1;
+	int tail = -1;
+	int time = 0;
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			tmpmap[i][j] = map[i][j];
+		}
+	}
+	for (int i = 0; i < 10; i++)
+	{
+		bool tt = true;
+		for (int j = 0; j < m; j++)
+		{
+			if (i == vi[j])
+			{
+				tt = false;
+				break;
+			}
+		}
+		if (tt)
+		{
+			tmpmap[viruslist[i][1]][viruslist[i][0]] = 0;
+		}
+	}
+	for (int i = 0; i < 2600; i++)
+	{
+		Q[i][0] = -1;
+		Q[i][1] = -1;
+	}
+	for (int i = 0; i < m; i++)
+	{
+		tail++;
+		Q[tail][0] = viruslist[vi[i]][0];
+		Q[tail][1] = viruslist[vi[i]][1];
+		Q[tail][2] = 0;
+		//printf("%d %d \n", viruslist[vi[i]][0], viruslist[vi[i]][1]);
+		
+	}
+	while (k < tail)
+	{
+		k++;
+		int t = tmpmap[Q[k][1]][Q[k][0]];
+
+		//printf("%d %d %d\n", Q[k][0], Q[k][1],k);
+		for (int i = 0; i < 4; i++)
+		{
+
+			int nx = Q[k][0] + dx[i];
+			int ny = Q[k][1] + dy[i];
+			if (issafe(nx, ny,tmpmap))
+			{
+				if (tmpmap[ny][nx] > t + 1 || tmpmap[ny][nx] == 0)
+				{
+					tmpmap[ny][nx] = t + 1;
+					//printf("%d %d\n", nx, ny);
+					tail++;
+					Q[tail][0] = nx;
+					Q[tail][1] = ny;
+				}
+
+			}
+		}
+	}
+	/*for (int i = 0; i < tail; i++)
+	{
+		printf("%d %d %d\n", Q[i][0], Q[i][1], Q[i][2]);
+	}*/
+	//printf("testestsest \n\n");
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			//printf("%d ", tmpmap[i][j]);
+			if (time < tmpmap[i][j]) time = tmpmap[i][j];
+			if (tmpmap[i][j] == 0)
+			{
+				//printf("end\n\n");
+				return;
+			}
+		}
+		//printf("\n");
+	}
+	//printf("%d\n", time);
+	if (time < res)
+		res = time;
+	
+	return;
+}
+void makecombi(int pos,int t)
+{
+	if (pos == m)
+	{
+		/*for (int i = 0; i < m; i++)
+		{
+			printf("%d ", vi[i]);
+		}
+		printf("\n");*/
+		bfs();
+		return;
+	}
+	for (int i = t; i < k; i++)
+	{
+		vi[pos] = i;
+		makecombi(pos + 1,i+1);
+	}
+}
+int main()
+{
+	for (int i = 0; i < 10; i++)
+	{
+		viruslist[i][1] = -1;
+		viruslist[i][0] = -1;
+	}
+	scanf_s("%d %d", &n , &m);
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			scanf_s("%d", &map[i][j]);
+			if (map[i][j] == 2)
+			{
+				viruslist[k][1] = i;
+				viruslist[k++][0] = j;
+			}
+		}
+
+	}
+	/*vi[0] = 0;
+	vi[1] = 1;
+	vi[2] = 4;
+	bfs();*/
+	makecombi(0,0);
+	if (res == 987654321)
+	{
+		printf("-1");
+	}
+	else
+		printf("%d", res-2);
+	return 0;
+}
