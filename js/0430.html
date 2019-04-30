@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- js위치 1 -->
+</head>
+<body>
+    <h1>hee</h1>
+    <!-- js위치 2 -->
+    <script>
+        /* 
+        여러줄 주석
+        */
+        // 주석
+        // alert('Hello JS!')
+        // 문서에 출력하기
+        document.write('<h1>Hello, JS!</h1>')
+        document.querySelector('h1')
+        // 변수 let : 재할당 가능
+        let word1 = '외안되'
+        document.write(word1)
+        // 변수 const : 재할당 불가능
+        const word2 = '외안되'
+        document.write(word2)
+        // word1 = '왜안돼'
+        // document.write(word1)
+        const firstName = 'happy'
+        const lastName = 'hacking'
+        const fullName = firstName+lastName
+        document.write('<h1>' + fullName + '!!</h1>')
+        document.write(`<h1>${fullName}!!</h1>`)
+
+        // console에 출력하기
+        console.log(`hello? ${fullName}`)
+        
+        // 사용자 입력 받기
+        // Pyton : user_name (snake_case)
+        // JS : userName (CamelCase)
+
+
+        // const userName = prompt('Hello Who are you?')
+        // let message = ''
+        // // if 문
+        // if (userName === 'admin')
+        // {
+        //     message = '<h1>This is secret Admin page</h1>'
+        // }
+        // else if (userName === 'miz')
+        // {
+        //     message = '<h1>Do you Know Miz?</h1>'
+        // }
+        // else
+        // { 
+        //     message = `<h1>Hi! ${userName}</h1>`
+        // }
+        // document.write(message)
+        
+        
+        // == vs. ===
+        // == : '값' 만 비교  (ex. 0 == '0'는 true)
+        // === : '값' & '타입' 비교 (ex. 0 === '0' False)
+
+        // 삼항 연산자
+        const number = 10
+        number === 10 ? document.write('number === 10') : document.write('number != 10')
+
+        // 세미콜론 테스트
+        const a = 1
+        const b = 2
+        const c = a+b;//오류 방지를 위해
+        (a+b).tostring()
+
+    </script>
+    
+</body>
+</html>
