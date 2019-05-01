@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+        }
+        .bg {
+            background-color: #F7F7F7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <img id="dino" width="100px" heigth="100px" src="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/88/e5/36/88e536d4-8a08-7c3b-ad29-c4e5dabc9f45/AppIcon-1x_U007emarketing-sRGB-85-220-0-6.png/246x0w.jpg" alt="dino">
+    </div>
+
+    <script>
+        const dino = document.querySelector('#dino')
+        let rx = 0
+        let uy = 0
+        let lx = 0
+        let dy = 0
+        dino.addEventListener('click',function(event){
+            console.log(dino)
+            console.log('아야!')
+        })
+        document.addEventListener('keydown',function(e){
+            console.log(e)
+            if(e.key === "ArrowUp" )
+            {
+                console.log('up')
+                uy++
+                let uypx = 20*uy
+                dino.style.marginBottom = (uypx+'px')
+            }
+            else if(e.key ==='ArrowDown')
+            {
+                console.log('down')
+                dino.style.marginUp = '20px'
+                dy++
+                let dypx = 20*dy
+                dino.style.marginTop = (dypx+'px')
+            }
+            else if(e.key === 'ArrowRight')
+            {
+                console.log('right')
+                rx++
+                let rxpx = 20*rx
+                dino.style.marginLeft = (rxpx+'px')
+            }
+            else if(e.key === 'ArrowLeft')
+            {
+                console.log('left')
+                lx++
+                let lxpx = 20*lx
+                dino.style.marginRight = (lxpx+'px')
+            }
+        })
+    </script>
+</body>
+</html>

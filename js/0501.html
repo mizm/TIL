@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="my"></div>
+    <button class="this-button">Click me</button>
+    <script>
+        /*
+            event Listener
+            [무엇] 을 [언제] [어떻게] 한다.
+            버튼 을   클릭하면  메시지가 나온다.
+        */
+        // 1. 무엇 -> 버튼
+        const button = document.querySelector('.this-button')
+        // 2. 언제 - > 버튼을 클릭하면
+        button.addEventListener('click',function(event){
+            const area = document.querySelector('.my')
+            // 3. 어떻게 -> 메시지
+            area.innerHTML = '<h1>hello?</h1>'
+        })
+    </script>
+</body>
+</html>

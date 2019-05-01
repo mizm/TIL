@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <style>
+        img {
+            width : 300px;
+            height : 300px;
+        }
+    </style> -->
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id = 'dog'>Dog!!!</button>
+    </div>
+    <script>
+        const button = document.querySelector("#dog")
+        button.addEventListener('click',function(e){
+        //api로 보낸다
+        let data = '';
+        axios.get('https://dog.ceo/api/breeds/image/random') // Promise 객체
+                .then(function (response) {
+                    // handle success
+                    console.log(response);
+                    return response.data.message;
+                })
+                .then(function(url){
+                    const imgTag = document.createElement('img');
+                    imgTag.src = url;
+                    imgTag.height = 300;
+                    imgTag.width = 300;
+                    document.querySelector('body').append(imgTag)
+                }) 
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
+                .then(function () {
+                    // always executed
+                });
+        })
+        
+    </script>
+</body>
+</html>
