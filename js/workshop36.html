@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button id = 'list-btn'>List</button>
+    <div id = 'list'>
+
+    </div>
+    <div>
+    <input type="text" id = 'title'>
+    <input type="text" id = 'content'>
+    <input type="text" id = 'author'>
+    <button id = 'create-btn' class='btn'>Submit</button>
+    </div>
+    <div id = 'list'></div>
+    <script>
+        const listBtn = document.querySelector('#list-btn');
+        listBtn.addEventListener('click',function(e){
+            document.querySelector('#list').innerHTML = '';
+            axios.get('http://13.125.249.144:8080/ssafy/gumi/1/posts')
+                .then(function(res){
+                    console.log(res.data.posts)
+                    res.data.posts.forEach(function(x){
+                        console.log(x)
+                        document.querySelector('#list').innerHTML += `<p>${x.title} | ${x.content} | ${x.author}<p>`;
+                    })
+                });
+        })
+        const subBtn = document.querySelector('#create-btn')
+        subBtn.addEventListener('click',function(e){
+            post = {post : { title : document.querySelector('#title').value,
+                            content : document.querySelector('#content').value,
+                            author : document.querySelector('#author').value
+                            }}
+            console.log(post)
+            axios.post('http://13.125.249.144:8080/ssafy/gumi/1/posts', post)
+                .then(function(res){
+                    console.log(res);
+                });
+        })
+    </script>
+</body>
+</html>
