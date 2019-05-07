@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 1. v-text , {{}} vs. v-html -->
+        <div v-text = 'header'> 
+            <!-- 단순 문자열 취급 -->
+            <!-- {{}} 와 같음 -->
+        </div>
+        <div v-html = 'header'>
+            <!-- html렌더링 -->
+        </div>
+        <!-- 2. v-show & v-if -->
+        <h1 v-if='visible'> v-if </h1>
+        <!-- false일 때 아예 사라짐 -->
+        <h1 v-show='visible'> v-show </h1>
+        <!-- false일 때 hide로 숨겨짐-->
+        <!-- 3. 속성에 직접 접근 -->
+        <!-- app.$data  => data자체를 불러옴 app.$el -->
+        <!-- 4. 축약 -->
+        <!-- v-on: -> @ & v-on:click -> @click -->
+        <!-- v-bind: -> : & v-bind:src -> :src  -->
+    </div>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data : {
+                header: '<h1>제목입니다.</h1>',
+                visible : true,
+            }
+        })
+    </script>
+</body>
+</html>
