@@ -26,5 +26,4 @@ const bookShop = {
 (function(){ console.log('나는 익명!') }) () 
 // 익명함수 실행시 뒤에 괄호를 붙여주면됨.
 
-```
 

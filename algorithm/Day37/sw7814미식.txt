@@ -1,0 +1,119 @@
+
+int RES,pos;
+int item[100][4] = { 0, };
+void dfs1(int n, int power_understand, int power_eat, int mvisit)
+{
+	int select = 0;
+	int check = 0;
+	int nvisit = 0;
+
+	int min_u = 1001;
+	int min_e = 1001;
+	for (int i = 0; i < n; i++)
+	{
+		if (!item[i][3] && (item[i][0] <= power_understand || item[i][1] <= power_eat))
+		{
+			select += item[i][2];
+			item[i][3] = 1;
+			nvisit++;
+			check = 1;
+		}
+	}
+	if (check)
+	{
+		if (RES < nvisit+mvisit)
+		{
+			RES = nvisit+mvisit;
+		}
+		for (int j = 0; j <= select; j++)
+		{
+			//if(power_understand+j >= min_u || power_eat+(select-j) >= min_e)
+			
+			dfs1(n, power_understand + j, power_eat + (select - j),mvisit+nvisit);
+			
+		}
+	}
+	
+}
+void dfs(int n, int power_understand, int power_eat)
+{
+	int select = 0;
+	int check = 0;
+	int min_u = 1001;
+	int min_e = 1001;
+	printf("%d %d ||%d\n", power_understand, power_eat, pos);
+	for (int i = 0; i < n; i++)
+	{
+		if (!item[i][3])
+		{
+			if (item[i][0] <= power_understand || item[i][1] <= power_eat)
+			{
+				select = 1;
+			}
+			if(item[i][0] > power_understand || item[i][1] > power_eat)
+			{
+				if (min_u > item[i][0])
+				{
+					min_u = item[i][0];
+				}
+				if (min_e > item[i][1])
+				{
+					min_e = item[i][1];
+				}
+			}
+		}
+		if (item[i][3]) check++;
+	}
+	if (!select)
+	{
+		if (RES < check)
+		{
+			RES = check;
+		}
+		return;
+	}
+	//printf("%d %d\n", min_u, min_e);
+	for (int i = 0; i < n; i++)
+	{
+		if (item[i][3])
+		{
+			continue;
+		}
+		if (item[i][0] <= power_understand || item[i][1] <= power_eat)
+		{
+			item[i][3] = 1;
+			for (int j = 0; j <= item[i][2]; j++)
+			{
+				if (power_understand + j >= min_u || power_eat + (select - j) >= min_e)
+					dfs(n, power_understand + j, power_eat + (item[i][2] - j));
+			}
+		}
+	}
+}
+int main()
+{
+	int t;
+	
+	cin >> t;
+	for (int i = 0; i < t; i++)
+	{
+		int n;
+		pos = 0;
+		cin >> n;
+		for (int j = 0; j < n; j++)
+		{
+			int a, b, c;
+			cin >> a >> b >> c;
+			item[j][0] = a;
+			item[j][1] = b;
+			item[j][2] = c;
+			item[j][3] = 0;
+		}
+		RES = 0;
+		//dfs(n, 1, 1);
+		dfs1(n, 1, 1, 0);
+		printf("#%d %d\n",i+1, RES);
+		
+	}
+	return 0;
+}
