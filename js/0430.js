@@ -1,3 +1,4 @@
+
 // 반복 1- while
 let i = 0;
 while (i<10){

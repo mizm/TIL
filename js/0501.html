@@ -10,6 +10,43 @@
     <div class="my"></div>
     <button class="this-button">Click me</button>
     <script>
+        console.log(typeof function(){})
+        console.log(typeof (() => {}))
+        console.log(typeof true)
+        console.log(typeof 'a')
+        console.log(typeof []) // object ?!!
+        console.log(typeof {}) // object..
+        const numbers = [1,2,3,4]
+        numbers.forEach(function(number){
+            console.log(number);
+        })
+        const mod2 = numbers.filter(function(x){ return x%2==0 })
+        console.log(mod2)
+        const one = numbers.filter(function(x){ return x==1 });
+        console.log(one)
+
+        const fruit = ['apple', 'grape', 'banana', 'apple', 'orange', 'grape', 'apple', 'orange'];
+ 
+const result = fruit.reduce(function(object, currentValue) {
+    if (!object[currentValue]) {
+        object[currentValue] = 0;
+    }
+    object[currentValue]++;
+ 
+    return object;
+},{});
+console.log(result)
+        console.log(numbers)
+        const name = 'do';
+        const greeting = function(message) {    return `${this.name} : ${message}` }
+        const you = { name: 'Yu',
+                    greeting }
+        console.log(you.greeting('hi')) // Yu : hi you.name = 'Jane' you.greeting('hello') // Jane : hell
+        console.log(this)
+
+        const sayHello = (name = 'noName') => `hi${name}`
+
+console.log(sayHello(),sayHello('john'))
         /*
             event Listener
             [무엇] 을 [언제] [어떻게] 한다.

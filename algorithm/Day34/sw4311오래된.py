@@ -3,6 +3,10 @@ for tc in range(int(input())) :
     item = list(map(int,input().split()))
     oper = list(map(int,input().split()))
     w = int(input())
+<<<<<<< Updated upstream
+=======
+    print(oper)
+>>>>>>> Stashed changes
     c = [1000] * 1000
     ar = []
     for i in item :
@@ -48,6 +52,13 @@ for tc in range(int(input())) :
                     	continue
                     Q.append((k,cnt))
                     c[k] = cnt
+<<<<<<< Updated upstream
         if c[w] > 0 and c[w] != 1000 :
             res = c[w]+1
     print("#%d %d"%(tc+1,res))
+=======
+        if c[w] > 0 :
+            res = c[w]+1
+
+    print(res)
+>>>>>>> Stashed changes
