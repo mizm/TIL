@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+int item[100001][4] = { 0, };
+int check(int r1, int r2, int pos)
+{
+	if (r1 == r2)
+	{
+		if (item[r1][0] == pos)
+			return 1;
+		else
+			return 0;
+	}
+	return item[r2][pos] - item[r1-1][pos];
+}
+int main()
+{
+	int tc;
+	scanf("%d",&tc);
+	for (int t = 0; t < tc; t++)
+	{
+		int N,Q;
+        scanf("%d %d",&N, &Q);
+		printf("#%d\n", t + 1);
+		for (int i = 1; i <= N; i++)
+		{
+			int tmp;
+            scanf("%d",&tmp);
+			item[i][0] = tmp;
+			for (int j = 1; j < 4; j++)
+			{
+				if (tmp == j)
+					item[i][tmp] = item[i - 1][tmp] + 1;
+				else
+					item[i][j] = item[i - 1][j];
+			}
+		}
+		for (int i = 0; i < Q; i++)
+		{
+			int r1, r2;
+            scanf("%d %d", &r1, &r2);
+			int a, b, c;
+			a = check(r1, r2, 1);
+			b = check(r1, r2, 2);
+			c = check(r1, r2, 3);
+			printf("%d %d %d\n", a, b, c);
+		}
+	}
+	return 0;
+}

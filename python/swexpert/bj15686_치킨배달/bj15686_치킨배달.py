@@ -43,3 +43,16 @@ res = 987654321
 dfs(0,item)
 print(res)
 
+# import itertools
+#
+# check = [1,2,3,4,5]
+#
+# print(list(itertools.permutations(check,3)))
+# print(list(itertools.combinations(check,3)))
+# res = []
+#
+# def permutation(list,r) :
+#
+#
+# combination(check,3,0,[])
+# print(res)
