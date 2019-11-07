@@ -17,6 +17,8 @@ alter table user_group alter column userid varchar(40) not null;
 -- Insert
 Insert Into sqlboard values ()
 insert into user_group values('219130', 1)
+-- delete
+DELETE FROM board where id = 10
 -- join
 select 
 	u.id, 
