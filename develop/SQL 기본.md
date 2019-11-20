@@ -50,5 +50,9 @@ where sg.GROUPID  = ug.GROUPID
 	and u.id = ug.userid 
 	and u.id = '219180'
 	group by queryid;
+
+
+``alter
+ALTER TABLE [테이블명] MODIFY ([컬럼명] DEFAULT [설정할 DEFAULT]);
 ```
 
