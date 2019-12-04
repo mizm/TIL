@@ -31,3 +31,16 @@ i를 누르면 insert모드로 진입함 현재 커서의 위치
 저장 후 나가기
 ```
 
+
+
+403 forbidden 에러 시
+
+blog.naver.com/PostView.nhn?blogId=cloverloop&logNo=140208992571&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+
+
+
+모든 경로의 권한을 최소 755로 바꿔줘야함
+
+경로가 /home/webprod/test/dist 이면
+
+home 부터 하나하나 권한 확인필요
