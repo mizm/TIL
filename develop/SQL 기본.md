@@ -12,6 +12,8 @@ CREATE TABLE `sqlboard` (
   `created_id` varchar(255),
   `updated_id` varchar(255)
 );
+-- update
+UPDATE ZIMON_SQL_SQL SET VLIST=(#{varlist})WHERE CHILD_SQL = #{child}
 -- alter
 alter table user_group alter column userid varchar(40) not null;
 -- Insert
