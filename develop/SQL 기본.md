@@ -56,5 +56,7 @@ where sg.GROUPID  = ug.GROUPID
 
 ``alter
 ALTER TABLE [테이블명] MODIFY ([컬럼명] DEFAULT [설정할 DEFAULT]);
+GRANT SELECT ON [TABLE NAME] TO [USER];
+
 ```
 
