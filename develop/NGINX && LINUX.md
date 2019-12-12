@@ -9,12 +9,13 @@
 ```bash
 wget http://nginx.org/packages/rhel/6/noarch/RPMS/nginx-release-rhel-6-0.el6.ngx.noarch.rpm
 rpm -ivh nginx-release-rhel-6-0.el6.ngx.noarch.rpm
+sudo rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 ```
 
 2. nginx 설치
 
 ```bash
-yum install nginx
+yum -y install nginx
 ```
 
 3. nginx 설정

@@ -5,9 +5,9 @@
 # chkconfig 2345 20 80
 # written by Gavin Kim on 2018.05.18
 # 프로세스 명을 명시한다. 변경
-readonly PROC_NAME="msgapiserver"
+readonly PROC_NAME="datacenterapi"
 # jar 파일명 변경
-readonly DAEMON="./msgapiserver-0.0.1-SNAPSHOT.jar"
+readonly DAEMON="./ildong-datacenter-api.0.0.1-SNAPSHOT.jar"
 # 프로세스 아이디가 존재할 패스를 설정 변경  및 temp 폴더 생성
 readonly PID_PATH="temp/"
 readonly PROC_PID="${PID_PATH}${PROC_NAME}.pid"

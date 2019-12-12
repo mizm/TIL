@@ -109,3 +109,8 @@ Exec Command : service nginx restart
 
 nginx restart
 
+
+
+## VUE DIST 중복되면서 반영 안될때를 위해 dist 폴더 삭제 명령 추가
+
+![1576117959913](C:\Users\ydh\AppData\Roaming\Typora\typora-user-images\1576117959913.png)
