@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("bj17135.txt", 'r')
+sys.stdin = open("bj17136.txt", 'r')
 
 import copy
 N,M,D = map(int,input().split())
