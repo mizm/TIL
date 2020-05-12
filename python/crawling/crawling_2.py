@@ -6,6 +6,15 @@ import time
 import async_timeout
 from bs4 import BeautifulSoup
 
+
+lock = dict()
+
+checkLast = dict()
+
+async def bound_fetch(sem, session, url):
+    async with sem:
+        return await fetch(session, url)
+
 async def fetch(session, url):
     node = []
     last = []
@@ -22,6 +31,7 @@ async def fetch(session, url):
         categroyList = soup.select('#mw-subcategories > div a')
         #print(html)
         for link in categroyList:
+            #print(link.get('title'))
             if link.text.find('틀:') >= 0 or link.text.find('사용자:') >= 0:
                 continue
             ## Tag안의 텍스트
@@ -50,10 +60,11 @@ async def fetch(session, url):
             await response.release()
 
 async def main(webNode):
+    sem = asyncio.Semaphore(100)
     async with aiohttp.ClientSession() as session:
         futures = []
         for u in webNode :
-            futures.append(asyncio.ensure_future(fetch(session, u)))
+            futures.append(asyncio.ensure_future(bound_fetch(sem,session, u)))
         res = await asyncio.gather(*futures)
         return res
 
@@ -62,7 +73,9 @@ if __name__ == '__main__':
     lastNode = []
     cnt = 0
     loop = asyncio.get_event_loop()
+    
     webNode = ['wiki/%EB%B6%84%EB%A5%98:%EC%98%81%ED%99%94']
+    
     # webNode = ['wiki/%EB%B6%84%EB%A5%98:%EC%84%B1%EC%86%8C%EC%88%98%EC%9E%90_%EC%98%81%ED%99%94%EC%A0%9C']
     #webNode = ['wiki/%EB%B6%84%EB%A5%98:%EC%98%81%ED%99%94%EC%83%81_%EC%88%98%EC%83%81%EC%9E%91']
     start = time.time()
@@ -72,19 +85,35 @@ if __name__ == '__main__':
         s = len(webNode)
         result = loop.run_until_complete(main(webNode))
         webNode = []
+        lock['wiki/%EB%B6%84%EB%A5%98:%EC%98%81%ED%99%94'] = 0
         errorcnt = 0
         for k in result :
-            webNode.extend(k['node'])
+            for p in k['node'] :
+                if lock.get(p) == None or lock.get(p) == 1: 
+                    webNode.append(p)
+                    lock[p] = k['error']
             for p in k['last'] :
-                if p not in lastNode :
-                    lastNode.append(p)
+                if checkLast.get(p) == None :
+                    checkLast[p] = 1
+                # if p not in lastNode :
+                #     lastNode.append(p)
             errorcnt += k['error']
         end = time.time()
         print(f"elapsed time = {end - start}s")
-        print(f"#{cnt} - next-search : {len(webNode)} last : {len(lastNode)} start : {s} error : {errorcnt}")
+        print(f"#{cnt} - next-search : {len(webNode)} last : {len(checkLast.keys())} start : {s} error : {errorcnt}")
+        f = open(str(cnt)+'.txt', 'w')
+        for k in webNode :
+            f.write(k + '\n')
+        f.close()
         #loop.close()
+        # break
     loop.close()
+    print("####################Done#####################")
     print(len(lastNode))
+    f = open('list.txt', 'w')
+    for k in checkLast.keys() :
+        f.write(k + '\n')
+    f.close()
 #
 # url = 'https://ko.wikipedia.org/'
 # webNode = ['wiki/%EB%B6%84%EB%A5%98:%EC%98%81%ED%99%94']
