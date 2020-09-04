@@ -1,0 +1,14 @@
+# Linux 심볼릭 링크 변경
+
+**Change owner or group of a symbolic link**
+
+```bash
+chown -h 사용자:그룹 심볼릭링크
+```
+
+
+
+```bash
+ln -Tfs 바꿀경로 링크
+```
+
