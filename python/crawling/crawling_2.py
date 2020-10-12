@@ -32,7 +32,7 @@ async def fetch(session, url):
         #print(html)
         for link in categroyList:
             #print(link.get('title'))
-            if link.text.find('틀:') >= 0 or link.text.find('사용자:') >= 0:
+            if link.get('title').find('영화') < 0 and (link.text.find('틀:') >= 0 or link.text.find('사용자:') >= 0) :
                 continue
             ## Tag안의 텍스트
             # print(link.text)
@@ -76,7 +76,7 @@ if __name__ == '__main__':
     
     webNode = ['wiki/%EB%B6%84%EB%A5%98:%EC%98%81%ED%99%94']
     
-    # webNode = ['wiki/%EB%B6%84%EB%A5%98:%EC%84%B1%EC%86%8C%EC%88%98%EC%9E%90_%EC%98%81%ED%99%94%EC%A0%9C']
+    webNode = ['wiki/%EB%B6%84%EB%A5%98:%EC%98%81%ED%99%94%ED%99%94%EB%90%9C_%EB%B9%84%EB%94%94%EC%98%A4_%EA%B2%8C%EC%9E%84']
     #webNode = ['wiki/%EB%B6%84%EB%A5%98:%EC%98%81%ED%99%94%EC%83%81_%EC%88%98%EC%83%81%EC%9E%91']
     start = time.time()
     while len(webNode) > 0:
@@ -101,15 +101,17 @@ if __name__ == '__main__':
         end = time.time()
         print(f"elapsed time = {end - start}s")
         print(f"#{cnt} - next-search : {len(webNode)} last : {len(checkLast.keys())} start : {s} error : {errorcnt}")
-        f = open(str(cnt)+'.txt', 'w')
-        for k in webNode :
-            f.write(k + '\n')
-        f.close()
+        # f = open(str(cnt)+'.txt', 'w')
+        # for k in webNode :
+        #     f.write(k + '\n')
+        # f.close()
         #loop.close()
-        # break
+        break
     loop.close()
     print("####################Done#####################")
     print(len(lastNode))
+    print(webNode)
+    print(lastNode)
     f = open('list.txt', 'w')
     for k in checkLast.keys() :
         f.write(k + '\n')
