@@ -70,3 +70,8 @@ public List<LineMessage.LineResponse> sendAsync(LineMessage.LineRequest msg)  {
 		return responses;
 }
 ```
+
+
+# 	왠만하면 “스프링”에서 “멤버변수”는 “Injection“에 사용하는 “bean“일 경우만 사용한다.
+- 스프링의 빈 객체를 관리하는 것은 싱글톤 레지스트리 방식이다
+- 그렇기 때문에 많은 쓰레드에서 같은 빈객체를 본다. 여기서 멤버변수는 thread safe하지 않다.
